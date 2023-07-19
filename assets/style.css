@@ -80,14 +80,292 @@ nav{
 }
 /* Nav Area End */
 
+/* Main Area Start Here */
+main{
+    background-image: url(/assets/images/Group\ 14.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.banner-container{
+    display: flex;
+    align-items: center;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 30px 0 30px 0;
+}
+.signup-area{
+    width: 50%;
+
+}
+
+.signup-text{
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.difrent-color{
+    color: #f948b2;
+    font-size: 48px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.play-title, .download, .support{
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: lowercase;
+    margin-top: 15px;
+}
+.bx{
+    margin-right: 10px;
+}
+.signup-area .btn{
+    padding: 20px 40px 20px 40px;
+    color: #FFF;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 48px;
+    border: none;
+    outline: none;
+    background-color: lightcoral;
+    margin-top: 40px;
+    cursor: pointer;
+
+}
+.signup-area button:last-child{
+    background-color: #FF42A5;
+}
+.images-area{
+width: 50%;
+}
+.images-area img{
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Banner Area End Here */
+
+/* games-Area Start Here */
+.games-container{
+    max-width: 1120px;
+    margin: 0 auto;
+    /* padding: 30px 0 30px 0; */
+}
+.games-title{
+    padding-top: 50px;
+    text-align: center;
+}
+.text-title{
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 700;
+}
+.title-color{
+    color: #f948b2;
+
+}
+.text-discribtion{
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 15px;
+}
+.games-driscribtion{
+    color: #534C64;
+    font-size: 14px;
+    font-weight: 500;
+}
+.games-area{
+    display: flex;
+    justify-content: center;
+}
+.games-img{
+    margin-right: 10px;
+    position: relative;
 
 
+}
+.games-img img{
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.overly{
+    width: 100%;
+    height: 91%;
+    background: rgba(0, 0, 0,0.5);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 11px;
+    opacity: 0;
+    transition: 1s;
+}
+.overly, .circel{
+    color: #fff;
+    font-size: 50px;
+}
+.games-img:hover .overly{
+    opacity: 1;
+}
+/*instantly area start here*/
+.instantly-container{
+    max-width: 1120px;
+    margin: 0 auto;
+}
+.play-instant-content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.play-instant-text{
+    width: 25%;
+    margin: 250px 0 0 100px; 
+}
+.play-instant-text p{
+    color: #534C64;
+    font-size: 14px;
+    font-weight: 400;
+}
+.play-instant-text span{
+    font-size: 35px;
+    font-weight: 700;
+}
+.play-instant-text .play-color{
+    color: #FF42A5;
+}
+.play-instant-img{
+    width: 50%;
+}
+.play-instant-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.play-instant-content{
+    position: relative;
+}
+.position-img img{
+    width: 250px;
+    height: 300px;
+}
+.position-img {
+	position: absolute;
+	right: 438px;
+	bottom: -66px;
+
+}
+/* Paly Instantly End Here */
+
+/* Item Area Start Here */
+.bg-color{
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
+.item-container{
+    max-width: 1120px;
+    margin: 0 auto;
+    padding-top: 60px;
+    height: 250px;
+} 
+.item-area{
+    display: grid;
+    grid-template-columns: 252px 1fr 1fr 1fr 1fr;
+    grid-template-rows: 65px 1fr 1fr;
+    gap: 25px;
+}
+ .image-btn{
+    display: flex;
+    background-color: #FFF;
+    border-radius: 50px;
+    padding: 10px 30px 10px 10px;
+    align-items: center;
+    border: none;
+    
+}
+.item:nth-child(6){
+    margin-left: 60px;
+}
 
 
+.image-btn:hover{
+    border: 1px solid red;
+} 
+.item-img img{
+    width: 30px;
+}
 
+ .item-text {
+    font-size: 15px;
+    font-weight: 600;
+}
+.item-text{
+    margin-left: 10px;
+}
 
+/* Ite Area End Here */
 
+/* Footer Area Start here */
+footer{
+    background: #0B0223;
+}
+.footer-area{
+    max-width: 1120px;
+    margin: 0 auto;
+    padding-top: 100px;
+    color: #fff;
+}
+.footer-title{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.footer-img{
+    width: 50px;
+}
+.gamer{
+    color: #f948b2;
+}
+.footer-text{
+    font-size: 45px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+.footer-content{
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+}
+.fotter-content, .icon, .trams, .fotter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
 
+}
+ul{
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 16px;
+    font-weight: 500;
+}
+.footer-driscribtion{
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 100px;
+}
 
 
 /* ------------ Media Query ----------------*/
@@ -107,5 +385,21 @@ nav{
     .menu-area ul li, .btn{
         margin-top: 20px;
     }
-}
-/* Nav Responsive End Here */
+    /* Nav Responsive End Here */
+    /* Banner Area Start */
+    .banner-container{
+        flex-direction: column;
+        padding-top: 0;
+
+    }
+    .signup-area, .images-area{
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .play-title, .download, .support{
+        margin-top: 10px;
+    }
+    .signup-area, .btn{
+        margin-top: 0;
+    }
