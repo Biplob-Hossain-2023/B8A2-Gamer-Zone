@@ -19,29 +19,28 @@ ul{
 }
 /* Nav Area Start */
 nav{
-    /* background-color: blueviolet; */
     background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
     
 }
 .container{
-    width: 1120px;
-    margin: 0 auto;
-}
-
-.nav-content{
-    width: 100%;
     display: flex;
     align-items: center;
-    text-align: center;
-    padding: 40px 0 40px 0;
-
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 30px 0 30px 0;
 }
-
 .logo-area{
     width: 50%;
     display: flex;
     align-items: center;
+}
+.menu-area{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
 }
 .logo-area img{
     width: 50px;
@@ -55,202 +54,58 @@ nav{
 .logo-area span{
     color: #FF42A5;
 }
-.menu-area{
-    text-align: center;
-    width: 50%;
-}
 .menu-area ul{
     display: flex;
-    justify-content: flex-end;
-    
 }
 .menu-area ul li{
     margin-right: 30px;
 }
-.menu-area ul li:last-child{
-    margin-right: 0;
-}
-.menu-area ul li a{
+.menu-area ul li a, .text-btn{
     color: #3C354F;
     font-size: 18px;
 }
-.menu-area ul li:last-child a{
+.menu-area .btn{
     padding: 17px 22px 18px 24px;
-    border: 1px solid red;
     color: #3C354F;
     font-size: 18px;
     border-radius: 8px;
-    
-}
-
-
-/* Banner Area Start */
-main{
-    background-image: url(/assets/images/Group\ 14.png);
-background-size: contain;
-background-repeat: no-repeat;
-
-}
-
-.banner-area{}
-.banner-contant{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.signup-area{
-    width: 50%;
-
-}
-.signup-area .btn{
-    padding: 20px 40px 20px 40px;
-    color: #FFF;
-    font-size: 10px;
-    font-weight: 600;
-    text-transform: uppercase;
-    border-radius: 48px;
-    border: none;
-    outline: none;
-    background-color: lightcoral;
-
-}
-.signup-area button:last-child{
-    background-color: #FF42A5;
-}
-.images-area{
-width: 50%;
-}
-.images-area img{
-    width: 100%;
-    object-fit: cover;
-}
-/* Games Area Start */
-.games-area{
-    display: flex;
-    justify-content: center;
-}
-.games-img{
-    margin-right: 10px;
-
-}
-.games-img img{
-    width: 100%;
-    object-fit: cover;
-    /* position: relative; */
-}
-.games-title{
-    padding-top: 120px;
+    background: rgba(11, 2, 35, 0.10);;
     text-align: center;
 }
 
-/* paly-instant Area  */
-.play-instant-area{
-    margin: 120px 0 120px 0;
-}
-.play-instant-content{
-    display: flex;
-    justify-content: space-between;
-}
-.play-instant-text{
-    width: 25%;
-    margin: 250px 0 0 100px; 
-}
-.play-instant-text p{
-    color: #534C64;
-    font-size: 14px;
-    font-weight: 400;
-}
-.play-instant-text span{
-font-size: 35px;
-font-weight: 700;
-}
-.play-instant-text .play-color{
-    color: #FF42A5;
-}
-.play-instant-img{
-width: 50%;
-}
-.play-instant-img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.play-instant-img{
-    
-}
-.play-instant-content{
-    position: relative;
-}
-.position-img img{
-    width: 250px;
-    height: 300px;
-}
-.position-img {
-	position: absolute;
-	right: 438px;
-	bottom: -66px;
-}
-/* Item  */
-.bg-color{
-    padding: 120px;
-    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
-}
-.item-area{
-   
-    display: grid;
-    grid-template-columns: 250px 1fr 1fr 1fr 1fr;
-    grid-template-rows: 60px 1fr 1fr;
-    gap: 25px;
-}
-.item{}
- .image-btn{
-    display: flex;
-    background-color: #FFF;
-    border-radius: 50px;
-    padding: 10px 30px 10px 10px;
-    /* text-align: center; */
-    align-items: center;
-    border: none;
-    transition: 1s;
-    
-}
-.item:nth-child(6){
-    margin-left: 60px;
-}
-/* .image-btn:hover{
-    border: 1px solid red;
-} */
-.item-img img{
-    width: 30px;
-}
-
- .item-text {
-    font-size: 15px;
-    font-weight: 600;
-}
-.item-text{
-    margin-left: 10px;
-}
-/* Footer Area  */
-.footer-area{
-    background: #0B0223;
-    color: #fff;
-}
-.footer-title{
-    display: flex;
-    align-items: center;
+.menu-area .youtube{
     text-align: center;
-    justify-content: center;
-}
-.fotter-content, .icon, .trams, .fotter{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
+    color: #F61C0D;
 
 }
-ul{
-    padding: 20px;
+/* Nav Area End */
+
+
+
+
+
+
+
+
+
+
+
+/* ------------ Media Query ----------------*/
+/* Mobile Divice */
+/* Nav Responsive Start Here */
+@media screen and (max-width:400px){
+    .container{
+        flex-direction: column;
+    }
+    .menu-area{
+        width: 100%;
+        flex-direction: column;
+    }
+    .menu-area ul{
+        flex-direction: column;
+    }
+    .menu-area ul li, .btn{
+        margin-top: 20px;
+    }
 }
+/* Nav Responsive End Here */
